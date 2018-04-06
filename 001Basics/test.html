@@ -4,56 +4,39 @@
     <meta charset="UTF-8">
     <title>能量源于内心</title>
     <style type="text/css">
-        body{
-            background-image: url(./images/10.png);
-            background-size: 100% 100%;
+        .container {
+            position: relative;
         }
-        html{
-            height: 100%;
+
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
         }
-        @keyframes myfirst {
-            from{opacity: 0}
-            to{opacity: 100}
-        }
-        h1,p{
-            animation: myfirst 5s;
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 1;
         }
     </style>
 </head>
 <body>
-<img src="./images/my logo.png/" width="300" height="300">
-<h1>我是王伟，这是我的网页</h1>
-<p>思想总是走在行动前面，想到才能做到。</p>
-<p>因此，思想就是因，而你在生活中所遭遇的一切，都是果。</p>
-<p>有因才有果，既然这样，就不要再为过去或现今的一切境遇有丝毫的抱怨了，</p>
-<p>因为一切取决于你自己，取决于你能不能把环境塑造成你所希望的样子。</p>
-<p>真诚渴望----主张权利----势必占有</p>
-</body>
-</html>
-<script  language="jscript">    
-  function    correctPNG()        
-        {      
-        for(var    i=0;    i<document.images.length;    i++)      
-              {      
-              var    img    =    document.images      
-              var    imgName    =    img.src.toUpperCase()      
-              if    (imgName.substring(imgName.length-3,    imgName.length)    ==    "PNG")      
-                    {      
-                    var    imgID    =    (img.id)    ?    "id='"    +    img.id    +    "'    "    :    ""      
-                    var    imgClass    =    (img.className)    ?    "class='"    +    img.className    +    "'    "    :    ""      
-                    var    imgTitle    =    (img.title)    ?    "title='"    +    img.title    +    "'    "    :    "title='"    +    img.alt    +    "'    "      
-                    var    imgStyle    =    "display:inline-block;"    +    img.style.cssText        
-                    if    (img.align    ==    "left")    imgStyle    =    "float:left;"    +    imgStyle      
-                    if    (img.align    ==    "right")    imgStyle    =    "float:right;"    +    imgStyle      
-                    if    (img.parentElement.href)    imgStyle    =    "cursor:hand;"    +    imgStyle                      
-                    var    strNewHTML    =    "<span    "    +    imgID    +    imgClass    +    imgTitle      
-                    +    "    style=\""    +    "width:"    +    img.width    +    "px;    height:"    +    img.height    +    "px;"    +    imgStyle    +    ";"      
-                    +    "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"      
-                    +    "(src=\'"    +    img.src    +    "\',    sizingMethod='scale');\"></span>"        
-                    img.outerHTML    =    strNewHTML      
-                    i    =    i-1      
-                    }      
-              }      
-        }      
-  window.attachEvent("onload",    correctPNG);   
-  </script>  
+
+<div class="container">
+    <img src="./images/6.png" alt="Norway" width="1000" height="300">
+    <div class="topleft">
+        <h1>我是王伟，这是我的网页</h1>
+        <p>思想总是走在行动前面，想到才能做到。</p>
+        <p>因此，思想就是因，而你在生活中所遭遇的一切，都是果。</p>
+        <p>有因才有果，既然这样，就不要再为过去或现今的一切境遇有丝毫的抱怨了，</p>
+        <p>因为一切取决于你自己，取决于你能不能把环境塑造成你所希望的样子。</p>
+        <p>真诚渴望----主张权利----势必占有</p>
+</div>
+    <img src="./images/MY-LOGO.png/" width="300" height="300">
+    </style>
+</head>
+<body>
+
+
