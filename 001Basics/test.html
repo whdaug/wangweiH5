@@ -12,7 +12,7 @@
             position: absolute;
             top: 8px;
             left: 16px;
-            font-size: 18px;
+            font-size:18px;
         }
 
         img {
@@ -20,12 +20,20 @@
             height: auto;
             opacity: 1;
         }
+        @keyframes myfirst  {
+            from{opacity: 0}
+            to{opacity: 100;}
+        }
+        h1,p{
+            animation: myfirst 6s;
+            
+        }
     </style>
 </head>
 <body>
-<img src="./images/MY-LOGO.png/" width="300" height="300">
+
 <div class="container">
-    <img src="./images/6.png" alt="Norway" width="1000" height="300">
+    <img src="./images/3.jpg" alt="Norway" width="1000" height="300">
     <div class="topleft">
         <h1>我是王伟，这是我的网页</h1>
         <p>思想总是走在行动前面，想到才能做到。</p>
